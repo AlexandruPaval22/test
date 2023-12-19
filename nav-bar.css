@@ -1,0 +1,127 @@
+:root {
+    --principal-color: #2a511b;
+    --white-color: #fff;
+};
+
+/* navigation menu  tablet and phone*/
+.offcanvas.hiding,
+.offcanvas.show,
+.offcanvas.showing {
+    width: 50% !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    padding: 0px;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--principal-color) !important;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.dropdown-menu a:hover {
+    background-color: #1f4211;
+}
+
+
+.navbar>.container-fluid {
+    background-color: var(--principal-color);
+}
+
+.navbar {
+    padding: 0% !important;
+}
+
+.offcanvas-header {
+    background-color: var(--principal-color);
+}
+
+.offcanvas-body {
+    background-color: var(--principal-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--white-color) !important;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 2em !important;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(assets/burger.png) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--principal-color);
+}
+
+nav img {
+    width: 80%;
+    height: 80%;
+}
+
+#menu-links a {
+    margin: 0 25px;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--white-color);
+}
+
+
+.soc-media {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px;
+    width: 6%;
+    height: 2em;
+    cursor: pointer;
+}
+
+.menu-btn {
+    padding: 2px 30px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.menu-btn:hover {
+    border: 1px solid white;
+    background-color: var(--principal-color);
+    color: var(--white-color);
+    transition: 0.4s;
+}

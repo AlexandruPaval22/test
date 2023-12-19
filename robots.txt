@@ -1,0 +1,4 @@
+Sitemap: https://www.seniorum.ro/sitemap.xml
+User-agent: *
+Allow: *
+Crawl-delay: 5

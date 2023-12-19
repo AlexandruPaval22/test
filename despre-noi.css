@@ -1,0 +1,286 @@
+@font-face {
+    font-family: FuturalTPRO;
+    src: url(Futural/FuturaLTProBook.otf);
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FuturalTPRO;
+}
+
+/* colors */
+
+:root {
+    --principal-color: #2a511b;
+}
+
+/* mobile */
+
+.mobile {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 6%;
+    z-index: 999; /* Opțional, pentru a asigura că imaginea este deasupra altor elemente */
+    cursor: pointer;
+}
+
+/* body */
+
+body {
+    background-color: rgb(240, 236, 233) !important;
+}
+
+/*  first section */
+
+.first-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* titlu + text */
+
+.title-text h1 {
+    text-align: center;
+    color: var(--principal-color);
+}
+
+.title-text p {
+    text-align: center;
+    color: var(--principal-color);
+}
+
+.call-me {
+    display: flex;
+    justify-content: center;
+}
+
+.call-me button {
+     background-color: var(--principal-color);
+     color: white;
+     border: none;
+     width: 15%;
+     text-align: center;
+     height: 5%;
+}
+
+/* videoclip */
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.video video {
+    width: 75%;
+    height: 85vh;
+    object-fit: cover;
+}
+
+/* galerie foto */
+
+.galerie-foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galerie-foto img {
+        width: 30%;
+        height: 20em;
+        margin: 2% 1%;
+}
+
+.group-button {
+    display: none;
+}
+
+.group-button button {
+    width: 40%;
+    align-self: center;
+    margin: 3% 0%;
+    background-color: var(--principal-color);
+    color: white;
+}
+
+/* contact form */
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left {
+    flex: 1;
+    padding: 10px;
+}
+
+.right {
+    flex: 1;
+    padding: 10px;
+}
+
+.left input,
+.right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.right a {
+     text-decoration: none;
+     color: black;
+     font-size: 1em;
+}
+
+.send-btn {
+   padding: 2%;
+   display: flex;
+   justify-content: center;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--principal-color);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo img {
+    width: 24%;
+    display: flex;
+    align-self: center;
+}
+
+.logo p {
+    margin: 0%;
+    text-align: center;
+    color: rgb(254, 255, 255);
+    font-size: 1.7em;
+    word-spacing: 2px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* footer menu */
+
+.footer-menu {
+    text-align: center;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    word-spacing: 5px;
+}
+
+
+/* media for contact form */
+  
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .left p {
+        text-align: center !important;
+    }
+
+    .right p {
+        text-align: center;
+    }
+}
+
+
+/* media querry telefon */
+
+@media screen and (max-width: 576px){
+    
+
+    /* galerie foto */
+
+.galerie-foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galerie-foto img {
+        width: 30%;
+        height: 7em !important;
+        margin: 2% 1%;
+}
+
+.hide {
+    display: none;
+}
+
+.group-button {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video video {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+.call-me button {
+        width: 30%;
+    }
+
+    .logo p {
+        font-size: 1.2em;
+        margin: 0% 7%;
+    }
+
+    .footer-menu {
+        margin: 2% 6%;
+     }
+
+     /* mobile */
+    .mobile {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        width: 16%;
+        z-index: 999; /* Opțional, pentru a asigura că imaginea este deasupra altor elemente */
+    }
+
+    .logo img {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    
+    .galerie-foto img {
+        height: 20vh;
+    }
+    
+
+    
+}

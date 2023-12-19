@@ -1,0 +1,252 @@
+@font-face {
+    font-family: FuturalTPRO;
+    src: url(Futural/FuturaLTProBook.otf);
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: FuturalTPRO;
+}
+
+/* colors */
+
+:root {
+    --principal-color: #2a511b;
+}
+
+/* mobile */
+
+.mobile {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 6%;
+    z-index: 999; /* Opțional, pentru a asigura că imaginea este deasupra altor elemente */
+    cursor: pointer;
+}
+
+/* body */
+
+body {
+    background-color: rgb(240, 236, 233) !important;
+}
+
+/* title h1 */
+
+h1 {
+    color: var(--principal-color);
+    text-align: center;
+}
+
+/* title */
+
+h2 {
+    font-size: 3em !important;
+    color: var(--principal-color);
+    font-weight: 900;
+    text-align: center;
+}
+
+/*  first section */
+
+.first-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* descriere */
+
+.descriere {
+    text-align: center;
+    color: var(--principal-color);
+}
+
+/* text ul */
+
+.my-div {
+    text-align: center; /* Centrăm conținutul &#238;n div */
+}
+
+.my-div ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Elementele li vor sta pe mai multe rânduri */
+    justify-content: center; /* Centrăm elementele pe orizontală */
+}
+
+.my-div li {
+    width: 45%; /* Lățimea pentru a afișa câte două elemente pe un rând */
+    margin: 10px; /* Spațiere &#238;ntre elementele li */
+    text-align: center; /* Centrăm textul &#238;n fiecare li */
+    color: var(--principal-color);
+}
+
+
+/* imagini */
+
+.cazare-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cazare-img img {
+    width: 30%;
+    height: 17em;
+}
+
+
+/* contact form */
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left {
+    flex: 1;
+    padding: 10px;
+}
+
+.right {
+    flex: 1;
+    padding: 10px;
+}
+
+.left input,
+.right textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.right a {
+     text-decoration: none;
+     color: black;
+     font-size: 1em;
+}
+
+.send-btn {
+   padding: 2%;
+   display: flex;
+   justify-content: center;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--principal-color);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo img {
+    width: 24%;
+    display: flex;
+    align-self: center;
+}
+
+.logo p {
+    margin: 0%;
+    text-align: center;
+    color: rgb(254, 255, 255);
+    font-size: 1.7em;
+    word-spacing: 2px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* footer menu */
+
+.footer-menu {
+    text-align: center;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    word-spacing: 5px;
+}
+
+/* media tablet mode */
+
+@media screen and (max-width: 992px) {
+    .cazare-img img {
+        height: auto;
+    }
+}
+
+/* media for contact form */
+  
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left,
+    .right {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .left p {
+        text-align: center !important;
+    }
+
+    .right p {
+        text-align: center;
+    }
+}
+
+/* media querry*/
+
+@media screen and (max-width: 576px) {
+   
+.cazare-img img {
+    width: 30%;
+    height: 7em;
+}
+
+.my-div li {
+    width: 75%; /* Lățimea pentru a afișa câte două elemente pe un rând */
+    margin: 10px; /* Spațiere &#238;ntre elementele li */
+    text-align: center; /* Centrăm textul &#238;n fiecare li */
+    color: #2a511b;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.logo p {
+    font-size: 1.2em;
+    margin: 0% 7%;
+}
+
+.footer-menu {
+    margin: 2% 6%;
+ }
+
+ /* mobile */
+ .mobile {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 16%;
+    z-index: 999; /* Opțional, pentru a asigura că imaginea este deasupra altor elemente */
+}
+
+}
+
+
