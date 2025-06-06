@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+
+  <!--meta uri-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--title-->
+  <title>Servicii</title>
+
+  <!--animatii AOS css-->
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!--Bootsrap v5.0-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--css nav-footer-->
+  <link rel="stylesheet" href="nav-footer.css">
+
+  <!--css-->
+  <link rel="stylesheet" href="servicii.css">
+
+  <!--Preload Image -->
+  <link rel="preload" href="assets/bg-servicii.webp" as="image" />
+
+  <style>
+    .bg-img-servicii {
+    background: url(assets/bg-servicii.webp) center no-repeat;
+    background-size: cover;
+    padding: 10%;
+    color: white;
+}
+  </style>
+
+</head>
+<!--incepe continutul-->
+<body>
+
+  <img class="menu-up" src="assets/Icons/up-arrow.png" alt="buton-spre-meniu">
+
+  <img class="menu-wh" src="assets/Icons/whatsapp-green.svg" alt="buton-spre-meniu">
+
+  <!--navigation bar desktop-->
+
+  <nav id="DESKTOP" class="d-none d-lg-flex">
+    <!--logo-->
+    <img class="logo" src="assets/Icons/logo.svg" alt="Logo" />
+
+    <!--nav links-->
+    <ul>
+      <li><a href="index.html">Acasa</a></li>
+      <li><a href="index.html#DESPRE-NOI">Despre noi</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="galerie-foto.html">Galerie foto</a></li>
+      <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!--navigation bar contact-->
+    <ul>
+      <li class="contact-phone">
+        <a href="tel:+40758594669">0758 594 669</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Tablet and phone navigation-->
+  <nav id="PHONE" class="d-flex d-lg-none">
+    <!--logo-->
+    <img class="logo" src="assets/Icons/logo.svg" alt="Logo" />
+
+    <img id="HAMBURGER-MENU" class="phone-menu" src="assets/Icons/hamburger-menu.png" alt="Hamburge-menu" />
+
+    <!--navigation bar contact-->
+    <ul>
+      <li class="contact-phone">
+        <a href="tel:+40758594669">0758 594 669</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="phone-nav-links hidden" style="z-index: 100;">
+    <!--nav links-->
+    <ul>
+      <li><a href="index.html">Acasa</a></li>
+      <li><a href="index.html#DESPRE-NOI">Despre noi</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="galerie-foto.html">Galerie foto</a></li>
+      <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!--servicii background-->
+  <div class="bg-img-servicii">
+    <h2>Servicii</h2>
+    <br />
+    <p>La Bep's AutoService, pasiunea pentru mașini se îmbină cu profesionalismul și experiența tehnică pentru a oferi
+      servicii auto complete, rapide și de înaltă calitate.
+      Descoperă mai jos gama completă de servicii pe care le oferim și lasă-ți mașina pe mâini bune</p>
+  </div>
+
+  <!--Detaliere servicii-->
+
+  <h2 style="text-align: center; margin: 3% 0; font-size: 2.5em;">Serviciile noastre</h2>
+
+
+  <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+
+
+    <!-- 1. Acordeon pentru Geometria Roților -->
+    <div class="cont-det-servicii" id="Geometrie" data-aos="fade-up">
+      <div class="cont-reglaj-directie">
+        <img src="assets/reglaj-directii-servicii.webp" alt="Reglaj Directie">
+      </div>
+
+      <div class="accordion" id="accordionGeometrie">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingGeoOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGeoOne"
+              aria-expanded="true" aria-controls="collapseGeoOne">
+              <h3 style="font-weight: bold;">REGLAJ DIRECTIE</h3>
+            </button>
+          </h2>
+          <div id="collapseGeoOne" class="accordion-collapse collapse show" aria-labelledby="headingGeoOne"
+            data-bs-parent="#accordionGeometrie">
+            <div class="accordion-body">
+              <strong>Geometria roţilor</strong> este o procedură care se realizează într-un service specializat pe
+              astfel de lucrări şi care are echipamentele necesare. Operaţiunea constă în verificarea direcției și a
+              unghiurilor anvelopelor, în funcție de specificațiile producătorului auto.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingGeoTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseGeoTwo" aria-expanded="false" aria-controls="collapseGeoTwo">
+              <h3 style="font-weight: bold;">Când e recomandat să faci geometria roţilor ?</h3>
+            </button>
+          </h2>
+          <div id="collapseGeoTwo" class="accordion-collapse collapse" aria-labelledby="headingGeoTwo"
+            data-bs-parent="#accordionGeometrie">
+            <div class="accordion-body">
+              <strong>Primul semnal de alarmă</strong>, care poate să aibă legătură cu geometria sistemului de direcţie,
+              apare atunci când autoturismul nu mai merge drept, în momentul în care volanul este lăsat liber. Dacă
+              direcţia se schimbă sau, cum se mai spune, autoturismul <strong>„trage”</strong> spre dreapta sau spre
+              stânga, e foarte probabil să fie afectată geometria roţilor.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingGeoThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseGeoThree" aria-expanded="false" aria-controls="collapseGeoThree">
+              <h3 style="font-weight: bold;">Importanța geometriei roţilor !</h3>
+            </button>
+          </h2>
+          <div id="collapseGeoThree" class="accordion-collapse collapse" aria-labelledby="headingGeoThree"
+            data-bs-parent="#accordionGeometrie">
+            <div class="accordion-body">
+              <strong>Reglarea geometriei roţilor</strong> este o operație foarte simplă, care se face într-un service
+              specializat. În majoritatea cazurilor, geometria roților din față și din spate este reglată în aproximativ
+              30 de minute. Cheltuielile nu sunt deloc prea ridicate, dacă avem în vedere avantajele în ceea ce privește
+              siguranţa pasagerilor.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- 2. Acordeon pentru Încărcarea cu Freon -->
+    <div class="cont-det-servicii" id="AC" data-aos="fade-up">
+      <div class="cont-reglaj-directie">
+        <img src="assets/sistem-ac-servicii.webp" alt="Sistem AC">
+      </div>
+
+      <div class="accordion" id="accordionFreon">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFreonOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFreonOne"
+              aria-expanded="true" aria-controls="collapseFreonOne">
+              <h3 style="font-weight: bold;">SITEME AC</h3>
+            </button>
+          </h2>
+          <div id="collapseFreonOne" class="accordion-collapse collapse show" aria-labelledby="headingFreonOne"
+            data-bs-parent="#accordionFreon">
+            <div class="accordion-body">
+              <strong>Absența sunetului produs de ambreiajul electromagnetic</strong>: în mod normal, imediat ce ai
+              pornit instalația, ar trebui să auzi un clinchet, urmat de o vibrație suplimentară față de cea a
+              motorului.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFreonTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFreonTwo" aria-expanded="false" aria-controls="collapseFreonTwo">
+              <h3 style="font-weight: bold;">Semnale de alarma!</h3>
+            </button>
+          </h2>
+          <div id="collapseFreonTwo" class="accordion-collapse collapse" aria-labelledby="headingFreonTwo"
+            data-bs-parent="#accordionFreon">
+            <div class="accordion-body">
+              <strong>Primul semnal de alarmă</strong>, care poate să aibă legătură cu geometria sistemului de direcţie,
+              apare atunci când autoturismul nu mai merge drept, în momentul în care volanul este lăsat liber. Dacă
+              direcţia se schimbă sau autoturismul <strong>„trage”</strong> spre dreapta sau stânga, e foarte probabil
+              să fie afectată geometria roţilor.
+              <br />
+              <strong>Funcționarea fără efect a compresorului</strong>: dacă sunetul metalic menționat mai sus se
+              produce, dar aerul pompat în habitaclu nu este rece, verifică modul de funcționare a instalației. Dacă au
+              trecut deja minute bune de la acționarea aerotermei cu poziția AC cuplată, dar efectul nu este cel dorit,
+              este clar că freonul s-a evaporat și ai nevoie de reîncărcare.
+              <br />
+              <strong>Urmele de scurgeri</strong>: o privire aruncată întâmplător poate scoate la iveală scurgeri ale
+              freonului la nivelul compresorului. Acest gaz poate persista pentru scurt timp pe elementele de
+              etanșeizare înainte de a se evapora.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFreonThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFreonThree" aria-expanded="false" aria-controls="collapseFreonThree">
+              <h3 style="font-weight: bold;">Cum prelungești intervalul dintre două încărcări cu freon</h3>
+            </button>
+          </h2>
+          <div id="collapseFreonThree" class="accordion-collapse collapse" aria-labelledby="headingFreonThree"
+            data-bs-parent="#accordionFreon">
+            <div class="accordion-body">
+              Modul în care folosești acest dispozitiv este hotărâtor pentru durata de viață a sa în sine, cât și a
+              consumabilelor. Pentru ca freonul să reziste cât mai mult, instalația va trebui pornită periodic, pe
+              funcția de răcire, chiar și în afara sezonului estival. În acest mod, componentele sistemului vor fi
+              gresate, garniturile își vor păstra etanșeitatea, iar conductele vor asigura circulația agentului.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Revizie si verificare -->
+    <div class="cont-det-servicii" id="Revizie" data-aos="fade-up">
+      <div class="cont-reglaj-directie">
+        <img src="assets/revizie-verificare-servicii.webp" alt="Revizie si verificare">
+      </div>
+
+      <div class="accordion" id="accordionRevizie">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRevizieOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseRevizieOne" aria-expanded="true" aria-controls="collapseRevizieOne">
+              <h3 style="font-weight: bold;">REVIZII SI VERIFICARI</h3>
+            </button>
+          </h2>
+          <div id="collapseRevizieOne" class="accordion-collapse collapse show" aria-labelledby="headingRevizieOne"
+            data-bs-parent="#accordionRevizie">
+            <div class="accordion-body">
+              <strong>Revizia auto</strong> reprezinta controale autorizate ale masinii, prin care se verifica starea
+              generala a acesteia si se inlocuiesc diverse componente consumabile.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRevizieTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseRevizieTwo" aria-expanded="false" aria-controls="collapseRevizieTwo">
+              <h3 style="font-weight: bold;">Ce se inlocuieste ?</h3>
+            </button>
+          </h2>
+          <div id="collapseRevizieTwo" class="accordion-collapse collapse" aria-labelledby="headingRevizieTwo"
+            data-bs-parent="#accordionRevizie">
+            <div class="accordion-body">
+              <strong>Schimbul uleiului de motor</strong>
+              Este una dintre cele mai importante operatiuni care trebuiesc facute periodic. O masina ingrijita are
+              intotdeauna nivelul de ulei asa cum recomanda producatorul, pentru o functionare impecabila si fara niciun
+              fel de surprize.
+              <br />
+              <strong>Schimbarea filtrelor</strong>
+              Aceasta operatiune include filtrul de ulei, filtru de aer si filtrul de polen. Fiecare dintre aceste
+              consumabile contribuie la pastrarea cat mai curata a motorului si a interiorului masinii, asigurand o
+              functionare in parametrii cei mai buni.
+              <br />
+              <strong>Verificarea sistemului de franare</strong> si schimbarea placutelor de frana daca este necesar
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRevizieThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseRevizieThree" aria-expanded="false" aria-controls="collapseRevizieThree">
+              <h3 style="font-weight: bold;">Cand trebuie facuta revizia la masina ?</h3>
+            </button>
+          </h2>
+          <div id="collapseRevizieThree" class="accordion-collapse collapse" aria-labelledby="headingRevizieThree"
+            data-bs-parent="#accordionRevizie">
+            <div class="accordion-body">
+              In general, o revizie auto se face o data la <strong>15.000 km sau la 10.000 km – ori cel mult un
+                an</strong> - daca o folosesti intens, pe drumuri cu probleme.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Electrica auto -->
+    <div class="cont-det-servicii" id="Electrica" data-aos="fade-up">
+      <div class="cont-reglaj-directie">
+        <img src="assets/electrica-auto-servicii.webp" alt="Electrica auto">
+      </div>
+
+      <div class="accordion" id="accordionElectrica">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingElectricaOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseElectricaOne" aria-expanded="true" aria-controls="collapseFreonOne">
+              <h3 style="font-weight: bold;">ELECTRICA AUTO</h3>
+            </button>
+          </h2>
+          <div id="collapseElectricaOne" class="accordion-collapse collapse show" aria-labelledby="headingElectricaOne"
+            data-bs-parent="#accordionElectrica">
+            <div class="accordion-body">
+              Serviciul nostru de reparații electrice auto reprezintă o soluție specializată pentru problemele electrice
+              ale vehiculului dumneavoastră. Cu o echipă de tehnicieni bine pregătiți și echipamente de diagnosticare
+              avansate, suntem pregătiți să rezolvăm și să remediem orice problemă electrică cu care vă confruntați.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingElectricaTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseElectricaTwo" aria-expanded="false" aria-controls="collapseElectricaTwo">
+              <h3 style="font-weight: bold;">Diagnostic precis</h3>
+            </button>
+          </h2>
+          <div id="collapseElectricaTwo" class="accordion-collapse collapse" aria-labelledby="headingElectricaTwo"
+            data-bs-parent="#accordionElectrica">
+            <div class="accordion-body">
+              Procesul nostru începe prin <strong>scanarea și diagnosticarea</strong> precisă a sistemelor electrice ale
+              vehiculului dumneavoastră. Utilizăm echipamente de diagnosticare specializate pentru a identifica erori,
+              probleme de conectare sau defecțiuni ale componentelor electrice.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingElectricaThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseElectricaThree" aria-expanded="false" aria-controls="collapseElectricaThree">
+              <h3 style="font-weight: bold;">Raport detaliat și explicativ</h3>
+            </button>
+          </h2>
+          <div id="collapseElectricaThree" class="accordion-collapse collapse" aria-labelledby="headingelectricaThree"
+            data-bs-parent="#accordionElectrica">
+            <div class="accordion-body">
+              La finalizarea reparațiilor, veți primi un <strrong>raport detaliat </strrong> care descrie problemele
+              electrice identificate,
+              reparațiile efectuate și costurile asociate. Aceasta vă oferă o imagine clară a lucrărilor efectuate și vă
+              ajută să înțelegeți ce s-a întâmplat cu vehiculul dumneavoastră.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Mecanica auto -->
+    <div class="cont-det-servicii" id="Mecanica" data-aos="fade-up">
+      <div class="cont-reglaj-directie">
+        <img src="assets/mecanica-auto-servicii.webp" alt="Mecanica auto">
+      </div>
+
+      <div class="accordion" id="accordionMecanica">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMecanicaOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseMecanicaOne" aria-expanded="true" aria-controls="collapseMecanicaOne">
+              <h3 style="font-weight: bold;">MECANICA AUTO</h3>
+            </button>
+          </h2>
+          <div id="collapseMecanicaOne" class="accordion-collapse collapse show" aria-labelledby="headingMecanicaOne"
+            data-bs-parent="#accordionMecanica">
+            <div class="accordion-body">
+              Serviciul nostru de<strong> mecanică auto </strong>este esențial pentru asigurarea funcționării optime și
+              a siguranței vehiculului dumneavoastră. Cu o echipă de mecanici profesioniști și bine pregătiți, precum și
+              cu acces la echipamente și utilaje specializate, suntem gata să vă oferim soluții de reparații mecanice de
+              încredere.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMecanicaTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseMecanicaTwo" aria-expanded="false" aria-controls="collapseMecanicaTwo">
+              <h3 style="font-weight: bold;">Diagnoză amănunțită</h3>
+            </button>
+          </h2>
+          <div id="collapseMecanicaTwo" class="accordion-collapse collapse" aria-labelledby="headingMecanicaTwo"
+            data-bs-parent="#accordionMecanica">
+            <div class="accordion-body">
+              Odată ce problemele sunt identificate, mecanicii noștri vor efectua reparațiile necesare. Acest lucru
+              poate include înlocuirea componentelor uzate sau defecte, efectuarea serviciilor de întreținere
+              planificate, precum schimbarea uleiului, schimbarea filtrelor, sau reglarea sistemelor de direcție și
+              suspensie.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMecanicaThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseMecanicaThree" aria-expanded="false" aria-controls="collapseMecanicaThree">
+              <h3 style="font-weight: bold;">Raport detaliat</h3>
+            </button>
+          </h2>
+          <div id="collapseMecanicaThree" class="accordion-collapse collapse" aria-labelledby="headingMecanicaThree"
+            data-bs-parent="#accordionMecanica">
+            <div class="accordion-body">
+              La finalizarea reparațiilor, veți primi un <strong>raport detaliat</strong> care va descrie toate
+              lucrările efectuate,
+              inclusiv înlocuiri, reparații, și servicii de întreținere. Acest raport vă ajută să înțelegeți exact ce
+              s-a făcut și de ce.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Masina la schimb -->
+    <div class="cont-det-servicii" id="Masina" data-aos="fade-up">
+      <div class="cont-reglaj-directie">
+        <img src="assets/masina-schimb-servicii.webp" alt="Masina">
+      </div>
+
+      <div class="accordion" id="accordionMasina">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMasinaOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMasinaOne"
+              aria-expanded="true" aria-controls="collapseMasinaOne">
+              <h3 style="font-weight: bold;">MASINA LA SCHIMB</h3>
+            </button>
+          </h2>
+          <div id="collapseMasinaOne" class="accordion-collapse collapse show" aria-labelledby="headingMasinaOne"
+            data-bs-parent="#accordionMasina">
+            <div class="accordion-body">
+              Chiar dacă mașina ta rămâne în service, tu îți continui programul fără griji. Oferim <strong>mașina la
+                schimb </strong> pentru ca tu să te deplasezi fără compromisuri, indiferent de natura reparației.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMasinaTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseMasinaTwo" aria-expanded="false" aria-controls="collapseMasinaTwo">
+              <h3 style="font-weight: bold;">Primești mașina la schimb dacă reparația durează peste 2 zile</h3>
+            </button>
+          </h2>
+          <div id="collapseMasinaTwo" class="accordion-collapse collapse" aria-labelledby="headingMasinaTwo"
+            data-bs-parent="#accordionMasina">
+            <div class="accordion-body">
+              Pentru lucrări care necesită mai mult timp, îți oferim o mașină la schimb astfel încât să nu-ți întrerupi
+              activitatea zilnică. Serviciul este disponibil în funcție de programare și tipul intervenției — totul
+              simplu și fără bătăi de cap.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMasinaThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseMasinaThree" aria-expanded="false" aria-controls="collapseMasinaThree">
+              <h3 style="font-weight: bold;">Serviciu disponibil pe bază de rezervare</h3>
+            </button>
+          </h2>
+          <div id="collapseMasinaThree" class="accordion-collapse collapse" aria-labelledby="headingMasinaThree"
+            data-bs-parent="#accordionMasina">
+            <div class="accordion-body">
+              Pentru a-ți garanta disponibilitatea unei mașini la schimb, recomandăm programarea în avans. Astfel, ne
+              asigurăm că totul decurge rapid și eficient din momentul în care îți lași mașina în service.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--Articole-->
+
+  <h2 style="margin-left: 5%;" data-aos="fade-up">Poate te-ar interesa si... ?</h2>
+
+
+<div class="container-art">
+     <!--Art.1-->
+
+  <div class="col-12 col-lg-4">
+
+    <div class="card" style="width: 18rem;" data-aos="fade-up">
+  <img src="assets/galerie-articole/fum-negru.webp" class="card-img-top" alt="fum negru">
+  <div class="card-body">
+    <h3 class="card-title">Fum negru?</h3>
+    <p class="card-text">Ai observat că mașina ta scoate fum negru pe țeava de eșapament? Aceasta nu este doar o problemă de imagine, ci un semn clar că motorul nu funcționează corect... </p>
+    <a href="ce-inseamna-cand-masina-scoate-fum-negru.html" class="btn btn-primary">Vezi articol</a>
+  </div>
+</div>
+
+  </div>
+  
+  <!--Art.2-->
+
+  <div class="col-12 col-lg-4">
+
+    <div class="card" style="width: 18rem;" data-aos="fade-up">
+  <img src="assets/galerie-articole/masina-porneste-greu.webp" class="card-img-top" alt="Masina porneste greu">
+  <div class="card-body">
+    <h3 class="card-title">Masina porneste greu?</h3>
+    <p class="card-text">Pornirea greoaie a mașinii este o problemă comună, mai ales în sezonul rece sau la mașinile mai vechi. Dacă observi că motorul se chinuie să pornească...</p>
+    <a href="de-ce-masina-ta-porneste-greu.html" class="btn btn-primary">Vezi articol</a>
+  </div>
+</div>
+
+  </div>
+
+  <!--Art.3-->
+
+  <div class="col-12 col-lg-4">
+
+    <div class="card" style="width: 18rem;" data-aos="fade-up">
+  <img src="assets/galerie-articole/practici-de-condus.webp" class="card-img-top" alt="practici de condus">
+  <div class="card-body">
+    <h3 class="card-title">Practici de condus</h3>
+    <p class="card-text">Condusul în orașe aglomerate este o provocare zilnică pentru mulți șoferi. Blocaje, semafoare, pietoni grăbiți, claxoane și nervi întinși la maximum – toate fac...</p>
+    <a href="practici-bune-pentru-condus-urban.html" class="btn btn-primary">Vezi articol</a>
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+
+
+  <!--footer website-->
+
+  <footer>
+    <!--1-->
+    <div class="footer-1">
+      <!--logo-->
+      <img src="assets/Icons/logo.svg" alt="logo" class="logo" />
+
+      <p>
+        Servicii profesionale de reparatii si intretinere auto in care poti
+        avea incredere. Mentinem vehiculul tau sigur si fiabil.
+      </p>
+
+      <div class="footer-media">
+        <!--facebook-->
+        <img class="footer-fb" src="assets/Icons/facebook-logo.svg" alt="facebook-logo" />
+        <!--whatsapp-->
+        <img class="footer-wh" src="assets/Icons/whatsapp-logo.svg" alt="whatsapp-logo" />
+        <!--instagram-->
+        <img class="footer-insta" src="assets/Icons/instagram-logo.svg" alt="instagram-logo" />
+        <!--tiktok-->
+        <img class="footer-tiktok" src="assets/Icons/tiktok-logo.svg" alt="tiktok-logo" />
+      </div>
+
+      <br />
+
+      <!--footer servicii-->
+      <div class="footer-servicii">
+        <h3>Servicii</h3>
+        <ul>
+          <li><a href="servicii.html#Geometrie">Reglaje directie</a></li>
+          <li><a href="servicii.html#Electrica">Electrica auto</a></li>
+          <li><a href="servicii.html#AC">Sisteme AC</a></li>
+          <li><a href="servicii.html#Masina">Masina la schimb</a></li>
+          <li><a href="servicii.html#Mecanica">Mecanica auto</a></li>
+          <li><a href="servicii.html#Revizie">Revizii si verificari</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--2-->
+    <div class="footer-2">
+      <h3>Link-uri rapide</h3>
+      <ul>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="galerie-foto.html">Galerie foto</a></li>
+        <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Politica de confidentialitate</a></li>
+        <li><a href="#">GDPR</a></li>
+      </ul>
+
+      <h3>Program</h3>
+      <ul style="list-style-type: disc">
+        <li>Luni - Vineri: 8:30 - 17:30</li>
+        <li>Sambata: INCHIS</li>
+        <li>Duminica: INCHIS</li>
+        <li>Telefon: 0758 594 669</li>
+        <li>Email: servicebeps@gmail.com</li>
+      </ul>
+    </div>
+    <!--3-->
+    <div class="footer-3">
+      <h2>Servicii de top <br />la preturi competititve</h2>
+    </div>
+
+    <!--ANPC-->
+    <div class="anpc">
+      <a href="https://anpc.ro/"><img src="assets/Icons/ANPC.svg" alt="ANPC" /></a>
+      <p>&copy; 2025 BEPS SERVICE. TOATE DREPTURILE REZERVATE</p>
+      <a href="https://anpc.ro/"><img src="assets/Icons/ANPC.svg" alt="ANPC" /></a>
+    </div>
+  </footer>
+
+  <!--conectare fisier javascript-->
+  <script src="main.js" defer></script>
+
+  <!--conecare animatii AOS biblioteca-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  <!--conectare boostrap V5.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous" defer></script>
+
+</body>
+
+</html>

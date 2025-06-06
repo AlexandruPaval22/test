@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+
+  <!--meta uri-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--title-->
+  <title>ServiceBeps</title>
+
+  <!--animatii AOS css-->
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!--Bootsrap v5.0-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+  <!--css nav-footer-->
+  <link rel="stylesheet" href="nav-footer.css" />
+
+  <!--css-->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!--Preload Image -->
+  <link rel="preload" href="assets/Bg1.webp" as="image" />
+
+  <style>
+  .bg-1 {
+    background: url(assets/Bg1.webp) center/cover no-repeat;
+    width: 100%;
+  }
+</style>
+  
+</head>
+
+<!--incepe continutul-->
+<body>
+
+   <img class="menu-up" src="assets/Icons/up-arrow.png" alt="buton-spre-meniu" width="50px" height="50px">
+
+   <img class="menu-wh" src="assets/Icons/whatsapp-green.svg" alt="buton-spre-meniu">
+
+  <!--navigation bar desktop-->
+
+  <nav id="DESKTOP" class="d-none d-lg-flex">
+    <!--logo-->
+    <img class="logo" src="assets/Icons/logo.svg" alt="Logo" />
+
+    <!--nav links-->
+    <ul>
+      <li><a href="index.html" style="color: #FFFF00">Acasa</a></li>
+      <li><a href="index.html#DESPRE-NOI">Despre noi</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="galerie-foto.html">Galerie foto</a></li>
+      <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!--navigation bar contact-->
+    <ul>
+      <li class="contact-phone">
+        <a href="tel:+40758594669">0758 594 669</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Tablet and phone navigation-->
+  <nav id="PHONE" class="d-flex d-lg-none">
+    <!--logo-->
+    <img class="logo" src="assets/Icons/logo.svg" alt="Logo" />
+
+    <img id="HAMBURGER-MENU" class="phone-menu" src="assets/Icons/hamburger-menu.png" alt="Hamburge-menu" />
+
+    <!--navigation bar contact-->
+    <ul>
+      <li class="contact-phone">
+        <a href="tel:+40758594669">0758 594 669</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="phone-nav-links hidden" style="z-index: 100;">
+    <!--nav links-->
+    <ul>
+      <li><a href="index.html">Acasa</a></li>
+      <li><a href="index.html#DESPRE-NOI">Despre noi</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="galerie-foto.html">Galerie foto</a></li>
+      <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- bg1 -->
+  <div class="bg-1">
+    <!-- background image -->
+    <div class="bg-1-title" style="margin-left: 8%">
+      <h2>
+        Performanta & <br />
+        Precizie
+      </h2>
+    </div>
+    <!--text upper background image-->
+    <div class="bg-1-text">
+      <p>
+        Bep's Service este un service auto modern, dedicat intretinerii si
+        reparatiilor auto de calitate superioara. Situat in Iasi , oferim
+        servicii complete pentru toate tipurile de autoturisme, de la revizii
+        periodice pana la reparatii complexe. Totodata service-ul nostru
+        asigura promptitudine, transparenta si preturi corecte.
+      </p>
+    </div>
+
+    <!--button option-->
+    <div class="buttons-option">
+      <button id="whatsappBtn">Programează-te</button>
+      <button id="contactBtn">Contact</button>
+    </div>
+
+    <!--down 3 column-->
+
+    <div class="cont-bg-1 d-flex justify-content-center text-center">
+      <div class="col-3">
+        <h2>5<span>+</span></h2>
+        <p>Ani experienta</p>
+      </div>
+
+      <div class="col-3">
+        <h2>15K<span>+</span></h2>
+        <p>Masini reparate</p>
+      </div>
+
+      <div class="col-3">
+        <h2>98<span>%</span></h2>
+        <p>Clienti satisfacuti</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--prezentare servicii-->
+
+  <div class="prezentare-servicii">
+    <br />
+    <br />
+
+    <h2 style="text-align: center; color: white">Servicii premium</h2>
+    <p style="text-align: center; color: white">
+      Intervenim rapid, eficient și cu garanție. Mașina ta este pe mâini bune!
+    </p>
+
+    <!--containere servicii-->
+
+    <br />
+    <div class="container-servicii">
+      <!--primul container-->
+      <div class="first-cont col-3" style="margin: 0 auto">
+        <!-- 1 -->
+        <div>
+          <h3>REGLAJE DIRECTIE</h3>
+          <a href="servicii.html#Geometrie"><img src="assets/Reglaje-directie.webp" alt="reglaje directie" /></a>
+        </div>
+        <!-- 2 -->
+        <div>
+          <h3>ELECTRICA AUTO</h3>
+          <a href="servicii.html#Electrica"><img src="assets/Electrica-si-electronica.webp" alt="electrica auto" /></a>
+        </div>
+      </div>
+      <!-- container 2-->
+      <div class="two-cont col-3">
+        <!-- 3 -->
+        <div>
+          <h3>SISTEME AC</h3>
+          <a href="servicii.html#AC"><img src="assets/Sisteme-AC.webp" alt="sistem ac" /></a>
+        </div>
+        <!-- 4 -->
+        <div>
+          <h3>MASINA LA SCHIMB</h3>
+          <a href="servicii.html#Masina"><img src="assets/masina-schimb.webp" alt="masina la schimb" height="auto" /></a>
+        </div>
+      </div>
+      <!--container 3-->
+      <div class="three-cont col-3" style="margin: 0 auto">
+        <!-- 5 -->
+        <div>
+          <h3>REVIZII SI VERIFICARI</h3>
+          <a href="servicii.html#Revizie"><img src="assets/Revizii-verificari.webp" alt="revizii si verificari" /></a>
+        </div>
+        <!-- 6 -->
+        <div>
+          <h3>MECANICA AUTO</h3>
+          <a href="servicii.html#Mecanica"><img src="assets/Mecanica-auto.webp" alt="mecanica auto" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="select-option">
+      <button id="SELECT-SERVICE">
+        Alege-ti serviciul
+        <br />
+        acum!
+      </button>
+    </div>
+  </div>
+
+  <!--sectiune despre noi-->
+
+  <div class="despre-noi" style="margin-top: 2%;" data-aos="fade-up" id="DESPRE-NOI">
+
+    <h1>Despre noi - <span style="font-weight: bold;">Bep's Service Auto Iasi</span></h1>
+
+    <br />
+
+    <p>La <span style="font-weight: bold;">Bep's</span>, pasiunea pentru masini se imbina cu profesionalismul si grija
+      fata de fiecare client. Suntem un service
+      auto complet din Iasi, specializat in reparatii si intretinere pentru toate marcile si modelele de autoturisme.
+    </p>
+
+    <br />
+
+    <p>Ne mandrim cu o echipa de mecanici calificati si cu echipamente moderne, care ne permit sa oferim servicii
+      rapide, corecte si la cele mai inalte standarde. Indiferent ca este vorba de o simpla revizie sau de o reparatie
+      complexa, tratam fiecare lucrare cu seriozitate si atentie la detalii.
+    </p>
+
+    <br />
+
+    <div class="despre-poza"><img src="assets/image-despre-noi.webp" alt="poza background"></div>
+
+    <br />
+    <div class="despre-text">
+
+      <h2 style="text-align: center;">
+        Ce ne recomanda:
+      </h2>
+
+      <br />
+      <p>
+
+        <span style="font-weight: bold;">Experienta si profesionalism </span> ,
+
+        <span style="font-weight: bold;">Gama larga de servicii auto</span> ,
+
+        <span style="font-weight: bold;">Promptitudine si transparenta</span> ,
+
+        <span style="font-weight: bold;">Masina la schimb disponibila</span> ,
+
+        <span style="font-weight: bold;">Atentie la nevoile fiecarui client.</span>
+      </p>
+
+
+
+    </div>
+
+    <br />
+
+    <p>Stim cat de important este timpul tau, asa ca punem la dispozitie masini la schimb pe durata interventiilor,
+      pentru ca tu sa ramai mereu in miscare.</p>
+
+    <br />
+    <h2>Suntem aici pentru a-ti oferi siguranta si incredere la fiecare drum. Alege Bep's.</h2>
+
+  </div>
+
+  <br />
+  <!--sectiune de ce noi-->
+
+  <div class="why" data-aos="fade-up" data-aos-duration="1000">
+    <!--first part-->
+    <div class="first-part">
+      <br />
+      <br />
+
+      <h2 style="margin-left: 10%">De ce sa alegi service-ul nostru?</h2>
+
+      <p>
+        la Bep's Service din Iasi iti oferim mai mult decat o simpla reparatie
+        , iti oferim incredere si siguranta la drum. Iata de ce clientii ne
+        aleg:
+      </p>
+    </div>
+
+    <!--last part-->
+
+    <div class="last-part" style="margin-top: 6%">
+      <!--1-->
+      <div>
+        <h3>Tehnicieni atestati</h3>
+        <p>
+          Mecanicii nostri sunt autorizati, cu experienta reala in domeniu
+        </p>
+      </div>
+      <!--2-->
+      <div>
+        <h3>Calitate garantata</h3>
+        <p>Garantie pentru manopera si piese</p>
+      </div>
+      <!--3-->
+      <div>
+        <h3>Intoarcere rapida</h3>
+        <p>Atentie la detalii si respect fata de client si masina</p>
+      </div>
+      <!--4-->
+      <div>
+        <h3>Clienti multumiti</h3>
+        <p>
+          Transparenta totala , stii dinainte ce lucrari facem si cat costa
+        </p>
+      </div>
+    </div>
+
+    <br />
+  </div>
+
+  <!--ce spun clientii nostrii-->
+
+  <!-- Secțiune Reviews -->
+  <div class="reviews" data-aos="fade-up" data-aos-duration="1000">
+    <!-- Introducere -->
+    <div class="clients">
+      <h2>Ce spun clienții noștri?</h2>
+      <p>
+        La <strong>Bep’s Service</strong> , fiecare client conteaza, iar fiecare masina este
+        tratata ca si cum ar fi a noastra.
+        <br />
+        Fiecare testimonial reflecta experienta reala a clientilor cu echipa
+        noastra, calitatea serviciilor si respectul pe care il oferim.
+      </p>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- Recenzii -->
+    <div class="d-flex flex-column flex-md-row justify-content-around gap-3">
+      <!-- Review 1 -->
+      <div class="star-review">
+        <div class="text-center">
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+        </div>
+        <p class="text-center">
+          Recomand cu incredere acest service! Am adus masina pentru o revizie completa si totul a decurs impecabil.
+          Mecanicii sunt profesionisti, amabili si mi-au explicat in detaliu ce interventii au fost necesare. Mi-au
+          livrat masina la timp si pretul a fost corect. Cu siguranta voi reveni
+        </p>
+        <h3 class="text-center">Mihai</h3>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="star-review">
+        <div class="text-center">
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+        </div>
+        <p class="text-center">
+          Am avut o experiență excelentă cu acest service auto! Personalul a fost foarte receptiv, au diagnosticat rapid
+          problema și au efectuat reparațiile cu promptitudine. Mi-au oferit constant actualizări și am simțit că sunt
+          pe mâini bune. Recomand cu toată încrederea pentru seriozitate și profesionalism!
+        </p>
+        <h3 class="text-center">George</h3>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="star-review">
+        <div class="text-center">
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+          <img src="assets/Icons/star-review.png" alt="imagine stea review" />
+        </div>
+        <p class="text-center">
+          Foarte mulțumit de serviciile primite! Am adus mașina pentru o problemă la sistemul de frânare, iar echipa a
+          rezolvat totul rapid și eficient. Am apreciat transparența și comunicarea clară. Prețuri decente, atitudine
+          prietenoasă – exact ce cauți de la un service de încredere. Revin cu siguranță!
+        </p>
+        <h3 class="text-center">Radu</h3>
+      </div>
+    </div>
+  </div>
+
+  <!--galerie foto-->
+  <br />
+  <br />
+
+  <div class="foto-gallery">
+    <h2 class="text-center">Galerie foto</h2>
+
+    <div class="gallery-images" data-aos="zoom-in">
+      <!--1-->
+      <img src="assets/Galerie-foto-homepage/1e.webp" alt="Masina" />
+      <!--2-->
+      <img src="assets/Galerie-foto-homepage/2e.webp" alt="Masina" />
+      <!--3-->
+      <img src="assets/Galerie-foto-homepage/3e.webp" alt="Masina" />
+      <!--4-->
+      <img src="assets/Galerie-foto-homepage/4e.webp" alt="Masina" />
+      <!--5-->
+      <img src="assets/Galerie-foto-homepage/5e.webp" alt="Masina" />
+      <!--6-->
+      <img src="assets/Galerie-foto-homepage/6e.webp" alt="Masina" />
+    </div>
+
+    <button id="GALERIE-FOTO">Vezi mai multe</button>
+  </div>
+
+  <br />
+
+  <!--formular de contact-->
+  <div class="container-contact">
+    <!--titlu + text-->
+    <br />
+    <br />
+
+    <h2 class="text-center">Contactează-ne</h2>
+    <p class="text-center" id="CONTACT">
+      Ai nevoie de o programare, o oferta personalizata sau doar informatii
+      suplimentare? Echipa Bep's Service este gata sa te ajute!
+    </p>
+
+    <br />
+    <br />
+
+    <!--first part-->
+    <div class="contact-form-home" data-aos="zoom-in">
+      <br />
+      <br />
+      <br />
+
+      <div class="form-position">
+        <form action="https://formsubmit.co/pavalalexandru20@email.com" method="POST">
+          <input type="text" name="nume" placeholder="Numele tău" required />
+          <input type="email" name="email" placeholder="Emailul tău" required />
+          <input type="text" name="subiect" placeholder="Subiect" />
+          <textarea name="mesaj" rows="5" placeholder="Scrie mesajul tău aici..." required></textarea>
+          <br />
+          <button type="submit">Trimite mesajul</button>
+          <br />
+        </form>
+
+        <!---->
+        <p>Spune-ne problema ta si te vom ajuta in cel mai scurt timp!</p>
+      </div>
+
+      <br />
+      <br />
+    </div>
+
+    <br />
+    <br />
+    <!--last part-->
+
+    <div class="information-contact">
+      <!--1-->
+      <div class="information-contact-part1">
+        <!---->
+        <div>
+          <h3>Adresa</h3>
+          <p>Iasi, Lunca Cetatuii, Str.Linistei nr.8</p>
+        </div>
+        <!---->
+        <div>
+          <h3>Telefon</h3>
+          <p>0758 594 669</p>
+        </div>
+      </div>
+      <!--2-->
+      <div class="information-contact-part2">
+        <!---->
+        <div>
+          <h3>Program de lucru</h3>
+          <p>8:30 - 17:30</p>
+        </div>
+        <!---->
+        <div>
+          <h3>Email</h3>
+          <p>servicebeps@gmail.com</p>
+        </div>
+      </div>
+      <!--iframe-->
+      <div class="information-contact-part3">
+        <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2716.3406399065684!2d27.565624975557306!3d47.092392423345714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40caf0a79d692751%3A0x845321a779b52a78!2sBEPS%20TRANS!5e0!3m2!1sro!2sro!4v1747997860204!5m2!1sro!2sro"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Locația BEPS TRANS Iași"
+></iframe>
+      </div>
+    </div>
+
+    <br />
+  </div>
+
+  <br />
+
+  <!--footer website-->
+
+  <footer>
+    <!--1-->
+    <div class="footer-1">
+      <!--logo-->
+      <img src="assets/Icons/logo.svg" alt="logo" class="logo" />
+
+      <p>
+        Servicii profesionale de reparatii si intretinere auto in care poti
+        avea incredere. Mentinem vehiculul tau sigur si fiabil.
+      </p>
+
+      <div class="footer-media">
+        <!--facebook-->
+        <img class="footer-fb" src="assets/Icons/facebook-logo.svg" alt="facebook-logo" />
+        <!--whatsapp-->
+        <img class="footer-wh" src="assets/Icons/whatsapp-logo.svg" alt="whatsapp-logo" />
+        <!--instagram-->
+        <img class="footer-insta" src="assets/Icons/instagram-logo.svg" alt="instagram-logo" />
+        <!--tiktok-->
+        <img class="footer-tiktok" src="assets/Icons/tiktok-logo.svg" alt="tiktok-logo" />
+      </div>
+
+      <br />
+
+      <!--footer servicii-->
+      <div class="footer-servicii">
+        <h3>Servicii</h3>
+        <ul>
+          <li><a href="servicii.html#Geometrie">Reglaje directie</a></li>
+          <li><a href="servicii.html#Electrica">Electrica auto</a></li>
+          <li><a href="servicii.html#AC">Sisteme AC</a></li>
+          <li><a href="servicii.html#Masina">Masina la schimb</a></li>
+          <li><a href="servicii.html#Mecanica">Mecanica auto</a></li>
+          <li><a href="servicii.html#Revizie">Revizii si verificari</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--2-->
+    <div class="footer-2">
+      <h3>Link-uri rapide</h3>
+      <ul>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="galerie-foto.html">Galerie foto</a></li>
+        <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Politica de confidentialitate</a></li>
+        <li><a href="#">GDPR</a></li>
+      </ul>
+
+      <h3>Program</h3>
+      <ul style="list-style-type: disc">
+        <li>Luni - Vineri: 8:30 - 17:30</li>
+        <li>Sambata: INCHIS</li>
+        <li>Duminica: INCHIS</li>
+        <li>Telefon: 0758 594 669</li>
+        <li>Email: servicebeps@gmail.com</li>
+      </ul>
+    </div>
+    <!--3-->
+    <div class="footer-3">
+      <h2>Servicii de top <br />la preturi competititve</h2>
+    </div>
+
+    <!--ANPC-->
+    <div class="anpc">
+      <a href="https://anpc.ro/"><img src="assets/Icons/ANPC.svg" alt="ANPC" /></a>
+      <p>&copy; 2025 BEPS SERVICE. TOATE DREPTURILE REZERVATE</p>
+      <a href="https://anpc.ro/"><img src="assets/Icons/ANPC.svg" alt="ANPC" /></a>
+    </div>
+  </footer>
+
+  <!--conectare fisier javascript-->
+  <script src="main.js" defer></script>
+
+  <!--conecare animatii AOS biblioteca-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  <!--conectare bootstrap V5.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous" defer></script>
+
+  <script>
+
+    // WhatsApp button
+    document.getElementById('whatsappBtn').addEventListener('click', function () {
+      const phoneNumber = '40758594669'; // înlocuiește cu numărul tău fără "+"
+      const message = 'Bună ziua! Aș dori o programare cât mai curând posibil la service. Îmi puteți spune ce intervale aveți libere ?'; // mesajul predefinit
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    });
+
+    // Scroll to CONTACT section
+    document.getElementById('contactBtn').addEventListener('click', function () {
+      const contactSection = document.getElementById('CONTACT');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    // ALEGE SERVICIUL
+
+    document.getElementById("SELECT-SERVICE").addEventListener("click", () => {
+      window.location.href = "servicii.html";
+    });
+
+    //Galerie foto
+    document.getElementById("GALERIE-FOTO").addEventListener("click", () => {
+      window.location.href = "galerie-foto.html";
+    });
+
+  </script>
+</body>
+
+</html>

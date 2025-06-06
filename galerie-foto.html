@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+
+  <!--meta uri-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--title-->
+  <title>Galerie</title>
+
+  <!--animatii AOS css-->
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!--Bootsrap v5.0-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+<!--css nav-footer-->
+  <link rel="stylesheet" href="nav-footer.css">
+
+  <!--css galerie-->
+  <link rel="stylesheet" href="galerie.css" />
+
+  <!--Preload Image -->
+  <link rel="preload" href="assets/bg-galerie-foto.webp" as="image" />
+
+  <style>
+    .bg-img-galerie {
+    background: url(assets/bg-galerie-foto.webp) center no-repeat;
+    background-size: cover;
+    padding: 10%;
+    color: white;
+}
+  </style>
+
+</head>
+<!--incepe continutul-->
+<body>
+
+  <img class="menu-up" src="assets/Icons/up-arrow.png" alt="buton-spre-meniu">
+
+  <img class="menu-wh" src="assets/Icons/whatsapp-green.svg" alt="buton-spre-meniu">
+
+  <!--navigation bar desktop-->
+
+  <nav id="DESKTOP" class="d-none d-lg-flex">
+    <!--logo-->
+    <img class="logo" src="assets/Icons/logo.svg" alt="Logo" />
+
+    <!--nav links-->
+    <ul>
+      <li><a href="index.html">Acasa</a></li>
+      <li><a href="index.html#DESPRE-NOI">Despre noi</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="galerie-foto.html">Galerie foto</a></li>
+      <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <!--navigation bar contact-->
+    <ul>
+      <li class="contact-phone">
+        <a href="tel:+40758594669">0758 594 669</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--Tablet and phone navigation-->
+  <nav id="PHONE" class="d-flex d-lg-none">
+    <!--logo-->
+    <img class="logo" src="assets/Icons/logo.svg" alt="Logo" />
+
+    <img id="HAMBURGER-MENU" class="phone-menu" src="assets/Icons/hamburger-menu.png" alt="Hamburge-menu" />
+
+    <!--navigation bar contact-->
+    <ul>
+      <li class="contact-phone">
+        <a href="tel:+40758594669">0758 594 669</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="phone-nav-links hidden" style="z-index: 100;">
+    <!--nav links-->
+    <ul>
+      <li><a href="index.html">Acasa</a></li>
+      <li><a href="index.html#DESPRE-NOI">Despre noi</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="galerie-foto.html">Galerie foto</a></li>
+      <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!--bg-image-galerie-->
+
+  <div class="bg-img-galerie">
+
+    <h2>Galerie foto</h2>
+    <br />
+    <p>La Bep's, credem ca transparenta si increderea incep cu lucruri simple. De aceea, iti oferim o privire din
+      interior prin aceasta galerie foto. Vezi cum arata spatiul nostru de lucru, echipamentele moderne pe care le
+      folosim si atmosfera profesionista din service-ul nostru
+      Fiecare imagine reflecta angajamentul nostru pentru calitate si grija fata de masina ta.</p>
+
+  </div>
+
+  <h2 style="text-align: center; margin: 3% 0;">Bine ați venit în galeria noastră foto!</h2>
+
+  <p style="text-align: center;">Descoperiți o selecție de imagini din activitatea zilnică a service-ului nostru – de la
+    intervenții tehnice și
+    reparații complexe, până la lucrări de întreținere și transformări spectaculoase. Fiecare fotografie spune povestea
+    dedicării și profesionalismului echipei noastre. Vă invităm să aruncați o privire în culisele muncii noastre!</p>
+
+  <div class="gallery">
+    <!--1-->
+    <div class="gal-1 row">
+
+      <img class="col-4" src="assets/galerie/1.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/2.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/3.webp" alt="imagine-galerie">
+
+    </div>
+    <!--2-->
+    <div class="gal-2 row">
+
+      <img class="col-4" src="assets/galerie/4.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/5.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/6.webp" alt="imagine-galerie">
+
+    </div>
+    <!--3-->
+    <div class="gal-3 row">
+
+      <img class="col-4" src="assets/galerie/7.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/8.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/9.webp" alt="imagine-galerie">
+
+    </div>
+    <!--4-->
+    <div class="gal-4 row">
+
+      <img class="col-4" src="assets/galerie/10.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/11.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/12.webp" alt="imagine-galerie">
+
+    </div>
+    <!--5-->
+    <div class="gal-5 row">
+
+      <img class="col-4" src="assets/galerie/13.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/14.webp" alt="imagine-galerie">
+
+      <img class="col-4" src="assets/galerie/15.webp" alt="imagine-galerie">
+
+    </div>
+
+
+  </div>
+
+   <br />
+
+  <!--ARTICOLE-->
+
+  <h2 style="margin-left: 5%;">Poate te-ar interesa si... ?</h2>
+
+  <div class="container-art">
+  <!--Art.3-->
+
+  <div class="col-12 col-lg-4" data-aos="fade-up">
+
+    <div class="card" style="width: 18rem;">
+  <img src="assets/galerie-articole/practici-de-condus.webp" class="card-img-top" alt="practici de condus">
+  <div class="card-body">
+    <h3 class="card-title">Practici de condus</h3>
+    <p class="card-text">Condusul în orașe aglomerate este o provocare zilnică pentru mulți șoferi. Blocaje, semafoare, pietoni grăbiți, claxoane și nervi întinși la maximum – toate fac...</p>
+    <a href="practici-bune-pentru-condus-urban.html" class="btn btn-primary">Vezi articol</a>
+  </div>
+</div>
+
+  </div>
+
+  <!--Art.4-->
+
+  <div class="col-12 col-lg-4" data-aos="fade-up">
+
+    <div class="card" style="width: 18rem;">
+  <img src="assets/galerie-articole/drum-lung.webp" class="card-img-top" alt="drum lung">
+  <div class="card-body">
+    <h3 class="card-title">Cum te pregatesti de drum lung?</h3>
+    <p class="card-text">Planifici o escapadă de weekend, un concediu la munte sau un drum lung în afara orașului? Înainte să pornești la drum, este esențial să te asiguri că mașina...</p>
+    <a href="cum-pregatesti-masina-pentru-drumuri-lungi.html" class="btn btn-primary">Vezi articol</a>
+  </div>
+</div>
+
+  </div>
+
+  <!--Art.5-->
+
+  <div class="col-12 col-lg-4" data-aos="fade-up">
+
+    <div class="card" style="width: 18rem;">
+  <img src="assets/galerie-articole/alternator.webp" class="card-img-top" alt="alternator">
+  <div class="card-body">
+    <h3 class="card-title">Alternator defect</h3>
+    <p class="card-text">Alternatorul este una dintre cele mai importante componente ale sistemului electric al mașinii. Acesta are rolul de a încărca bateria și de a alimenta toate...</p>
+    <a href="simptomele-unui-alternator-defect.html" class="btn btn-primary">Vezi articol</a>
+  </div>
+</div>
+
+  </div>
+
+  </div>
+
+  <!--footer website-->
+
+  <footer>
+    <!--1-->
+    <div class="footer-1">
+      <!--logo-->
+      <img src="assets/Icons/logo.svg" alt="logo" class="logo" />
+
+      <p>
+        Servicii profesionale de reparatii si intretinere auto in care poti
+        avea incredere. Mentinem vehiculul tau sigur si fiabil.
+      </p>
+
+      <div class="footer-media">
+        <!--facebook-->
+        <img class="footer-fb" src="assets/Icons/facebook-logo.svg" alt="facebook-logo" />
+        <!--whatsapp-->
+        <img class="footer-wh" src="assets/Icons/whatsapp-logo.svg" alt="whatsapp-logo" />
+        <!--instagram-->
+        <img class="footer-insta" src="assets/Icons/instagram-logo.svg" alt="instagram-logo" />
+        <!--tiktok-->
+        <img class="footer-tiktok" src="assets/Icons/tiktok-logo.svg" alt="tiktok-logo" />
+      </div>
+
+      <br />
+
+      <!--footer servicii-->
+      <div class="footer-servicii">
+        <h3>Servicii</h3>
+        <ul>
+          <li><a href="servicii.html#Geometrie">Reglaje directie</a></li>
+          <li><a href="servicii.html#Electrica">Electrica auto</a></li>
+          <li><a href="servicii.html#AC">Sisteme AC</a></li>
+          <li><a href="servicii.html#Masina">Masina la schimb</a></li>
+          <li><a href="servicii.html#Mecanica">Mecanica auto</a></li>
+          <li><a href="servicii.html#Revizie">Revizii si verificari</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--2-->
+    <div class="footer-2">
+      <h3>Link-uri rapide</h3>
+      <ul>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="galerie-foto.html">Galerie foto</a></li>
+        <li><a href="stiai-ca.html">Stiai ca...?</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Politica de confidentialitate</a></li>
+        <li><a href="#">GDPR</a></li>
+      </ul>
+
+      <h3>Program</h3>
+      <ul style="list-style-type: disc">
+        <li>Luni - Vineri: 8:30 - 17:30</li>
+        <li>Sambata: INCHIS</li>
+        <li>Duminica: INCHIS</li>
+        <li>Telefon: 0758 594 669</li>
+        <li>Email: servicebeps@gmail.com</li>
+      </ul>
+    </div>
+    <!--3-->
+    <div class="footer-3">
+      <h2>Servicii de top <br />la preturi competititve</h2>
+    </div>
+
+    <!--ANPC-->
+    <div class="anpc">
+      <a href="https://anpc.ro/"><img src="assets/Icons/ANPC.svg" alt="ANPC" /></a>
+      <p>&copy; 2025 BEPS SERVICE. TOATE DREPTURILE REZERVATE</p>
+      <a href="https://anpc.ro/"><img src="assets/Icons/ANPC.svg" alt="ANPC" /></a>
+    </div>
+  </footer>
+
+  <!--conectare fisier javascript-->
+  <script src="main.js" defer></script>
+
+  <!--conecare animatii AOS biblioteca-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+  <!--conectare boostrap v5.0-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous" defer></script>
+
+</body>
+
+</html>

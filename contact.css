@@ -1,0 +1,106 @@
+/* general settings page */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* section bg-1 */
+
+.bg-1-title h2 {
+    color: white;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.bg-1-text p {
+    width: 70%;
+    margin-left: 8%;
+    text-align: start;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* contact form */
+
+.contact-form-home form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff71;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 3% auto;
+}
+
+.contact-form-home form input {
+    width: 65%;
+    margin: 3% 0;
+    padding: 3%;
+    height: 3em;
+    background: #090f57dc;
+    border-radius: 20px;
+    color: white;
+}
+
+.contact-form-home form input::placeholder {
+    color: white;
+}
+
+.contact-form-home form textarea {
+    width: 65%;
+    background: #090f57dc;
+    padding: 3%;
+}
+
+.contact-form-home form textarea::placeholder {
+    color: white;
+}
+
+.contact-form-home button {
+    width: 30%;
+    background: #111827;
+    padding: 1%;
+    color: white;
+}
+
+.contact-form-home h2 {
+    text-align: center;
+}
+
+
+
+
+
+/* phone and tablet media querry */
+
+@media only screen and (max-width: 767px) {
+  /* background text */
+  .bg-1-text p {
+    width: 100%;
+    text-align: center;
+    margin-left: 0%;
+    font-size: 1.3em;
+  }
+
+  /* contact-form */
+.contact-form-home form {
+  width: 70%;
+}
+
+.contact-form-home form input {
+    width: 85%;
+}
+
+.contact-form-home form textarea {
+    width: 85%;
+}
+
+.contact-form-home button {
+    width: 60%;
+    padding: 2%;
+}
+
+}

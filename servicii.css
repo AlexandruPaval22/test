@@ -1,0 +1,80 @@
+/* general settings page */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* background-image */
+
+.bg-img-servicii h2 {
+    font-size: 4em;
+}
+
+.bg-img-servicii p {
+    width: 50%;
+}
+
+.cont-det-servicii {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 4% 0;
+}
+
+/* reglaj directie */
+
+.cont-reglaj-directie {
+    width: 40%;
+}
+
+.cont-reglaj-directie img {
+    width: 100%;
+}
+
+
+.accordion {
+    width: 70%;
+}
+
+
+/* sectiunea articole */
+
+.container-art {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-art .col-lg-4 {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* phone view */
+
+@media only screen and (max-width: 767px)  {
+    
+.bg-img-servicii p {
+    width: 90%;
+}
+
+
+.cont-det-servicii {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-reglaj-directie {
+    width: 100%;
+} 
+
+.accordion {
+    width: 100%;
+}
+
+}
