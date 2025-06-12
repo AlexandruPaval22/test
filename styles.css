@@ -1,0 +1,554 @@
+/* general settings page */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* section bg-1 */
+
+.bg-1-title h2 {
+    color: white;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.bg-1-text p {
+    width: 70%;
+    margin-left: 8%;
+    text-align: start;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* buttons option */
+
+.buttons-option {
+    margin-left: 8%;
+}
+
+.buttons-option button {
+    margin: 0 2%;
+}
+
+.buttons-option button:hover {
+    opacity: 1;
+}
+
+.buttons-option button:first-of-type {
+    background: #A31010;
+    border: none;
+    width: 20%;
+    padding: 1%;
+    color: white;
+}
+
+.buttons-option button:nth-child(2) {
+    background: #27272A;
+    border: none;
+    width: 20%;
+    padding: 1%;
+    color: white;
+}
+
+/* 3 down containers */
+
+.cont-bg-1 {
+    margin-top: 3%;
+}
+
+.cont-bg-1 h2 {
+    color: #EF4444;
+}
+
+.cont-bg-1 p {
+    color: white;
+}
+
+.cont-bg-1 .col-3 {
+    margin: 0 3%;
+    background: #18181B;
+    opacity: 0.8;
+    border-radius: 15px 15px 0 0;
+    padding: 3%;
+}
+
+/*sectiune servicii */
+
+.prezentare-servicii {
+    background: #18181B;
+}
+
+.container-servicii {
+    display: flex;
+    justify-content: center;
+}
+
+.container-servicii h3 {
+    color: white;
+    text-align: center;
+    margin: 17px 0;
+}
+
+.container-servicii img {
+    width: 100%;
+}
+
+.container-servicii img:hover {
+    opacity: 0.8;
+    border: 2px solid red;
+}
+
+.two-cont {
+    margin: 8% auto;
+}
+
+/*  select option */
+
+.select-option {
+    display: flex;
+    justify-content: center;
+}
+
+.select-option button {
+    background-color: #A31010;
+    color: white;
+    border: none;
+    padding: 1%;
+    border-radius: 20px;
+    width: 20%;
+    font-size: 1.3em;
+    margin-bottom: 5%;
+}
+
+.select-option button:hover {
+    border: 2px solid black;
+}
+
+/* despre noi */
+
+.despre-noi h1 {
+    text-align: center;
+}
+
+.despre-noi h2 {
+    text-align: center;
+}
+
+.despre-noi p {
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.despre-text {
+    width: 100%;
+}
+
+.despre-poza {
+    display: flex;
+    justify-content: center;
+}
+
+.despre-poza img  {
+    width: 85%;
+}
+
+
+
+/* sectiune de ce noi */
+
+.why {
+    background: #F3F4F6;
+}
+
+.first-part p {
+    width: 75%;
+    margin-left: 10%;
+}
+
+/* last part */
+
+.last-part div {
+    margin-left: 10%;
+}
+
+.last-part h3 {
+    display: flex;
+    align-items: center;
+}
+
+.last-part div:first-child h3::before {
+    content: "";
+    display: block;
+    background: url(assets/Icons/Frame.svg) no-repeat;
+    width: 55px;
+    height: 25px;
+}
+
+.last-part div:nth-child(2) h3::before {
+    content: "";
+    display: block;
+    background: url(assets/Icons/Frame2.svg) no-repeat;
+    width: 55px;
+    height: 25px;
+}
+
+.last-part div:nth-child(3) h3::before {
+    content: "";
+    display: block;
+    background: url(assets/Icons/Frame3.svg) no-repeat;
+    width: 55px;
+    height: 25px;
+}
+
+.last-part div:nth-child(4) h3::before {
+    content: "";
+    display: block;
+    background: url(assets/Icons/Frame4.svg) no-repeat;
+    width: 55px;
+    height: 25px;
+}
+
+/* ce spun clientii nostrii */
+
+.reviews {
+    margin-top: 5%;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients p {
+    width: 80%;
+    text-align: center;
+}
+
+.star-review img {
+    width: 50px;
+    height: 50px;
+}
+
+.star-review {
+    background: #F9FAFB;
+    margin: 0 2%;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+/* galerie foto */
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    height: 20%;
+    margin: 2% 1%;
+}
+
+.foto-gallery {
+    text-align: center;
+}
+
+.foto-gallery button {
+    background-color: white;
+    color: #18181B;
+    padding: 1%;
+    border-radius: 20px;
+    width: 20%;
+    font-size: 1.2em;
+}
+
+.foto-gallery button:hover {
+    background-color: #18181B;
+    color: white;
+}
+
+/* contact form */
+
+/* container contact form */
+
+.container-contact {
+    background: #F3F4F6;
+}
+
+.contact-form-home {
+    background: url(assets/contact-bg.webp) no-repeat center;
+    background-size: cover;
+}
+
+.contact-form-home form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff71;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.contact-form-home form input {
+    width: 65%;
+    margin: 3% 0;
+    padding: 3%;
+    height: 3em;
+    background: #090f57dc;
+    border-radius: 20px;
+}
+
+.contact-form-home form input::placeholder {
+    color: white;
+}
+
+.contact-form-home form textarea {
+    width: 65%;
+    background: #090f57dc;
+    padding: 3%;
+}
+
+.contact-form-home form textarea::placeholder {
+    color: white;
+}
+
+.contact-form-home button {
+    width: 30%;
+    background: #111827;
+    padding: 1%;
+    color: white;
+}
+
+/* form position */
+
+.form-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-position p {
+   font-size: 4em;
+   text-align: center;
+   color: rgba(255, 255, 255, 1);
+   width: 40%;
+   -webkit-text-stroke: 1px black;
+}
+
+/* contact form -> information contact */
+
+.information-contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.information-contact p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-contact h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-contact-part1  {
+    text-align: center;
+}
+
+.information-contact-part1 div:first-child p::before {
+    content: "";
+    display: block;
+    background: url(assets/Icons/location.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.information-contact-part1 div:nth-child(2) p::before {
+    content: "";
+    display: block;
+    background: url(assets/Icons/telefon-blue.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.information-contact-part2  {
+    text-align: center;
+}
+
+.information-contact-part2 div:first-child p::before {
+    content: "";
+    display: block;
+    background: url(assets/Icons/ceas-munca.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.information-contact-part2 div:nth-child(2) p::before {
+    content: "";
+    display: block;
+    background: url(assets/Icons/mail.svg) no-repeat;
+    width: 25px;
+    height: 25px;
+}
+
+.information-contact-part3 iframe  {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone and tablet media querry */
+
+@media only screen and (max-width: 767px) {
+  /* background text */
+  .bg-1-text p {
+    width: 100%;
+    text-align: center;
+    margin-left: 0%;
+    font-size: 1.3em;
+  }
+
+  .buttons-option {
+    text-align: center;
+    margin-left: 0%;
+  }
+
+  .buttons-option button:first-of-type {
+    width: 40%;
+    opacity: 1;
+}
+
+.buttons-option button:nth-child(2) {
+    width: 40%;
+    opacity: 1;
+}
+
+.cont-bg-1 .col-3 {
+    margin: 0 3px;
+    width: 32%;
+    padding: 0%;
+}
+
+/* sectiune servicii */
+
+.container-servicii h3 {
+    font-size: 1em;
+    margin: 17px 0;
+}
+
+.container-servicii img {
+    width: 97.5px;
+    height: 97.5px;
+}
+
+.despre-poza img {
+    width: 331.5px;
+    height: 201px;
+}
+
+
+.two-cont {
+    margin: 16% auto;
+}
+
+.select-option button {
+    width: 50%;
+}
+
+/* sectiunea why */
+
+.why p {
+    width: 90%;
+}
+
+
+/* sectiunea reviews */
+
+.reviews .d-flex {
+    flex-wrap: wrap;
+}
+
+.star-review {
+    margin-top: 3%;
+}
+
+/* galerie foto */
+
+.foto-gallery button {
+    background-color: #18181B;
+    color: white;
+    padding: 1%;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.gallery-images img {
+    width: 117px;
+    height: 131.08px;
+}
+
+/* contact-form */
+.contact-form-home form {
+  width: 70%;
+}
+
+.contact-form-home form input {
+    width: 85%;
+}
+
+.contact-form-home form textarea {
+    width: 85%;
+}
+
+.contact-form-home button {
+    width: 60%;
+    padding: 2%;
+}
+
+.form-position p {
+   font-size: 2em;
+   width: 90%;
+   margin-top: 2%;
+}
+
+/* informatii de contact */
+
+.information-contact {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+}

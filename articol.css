@@ -1,0 +1,17 @@
+/* general settings page */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h2 , h3 {
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+.text p {
+    width: 90%;
+    margin: 1% auto;
+}
