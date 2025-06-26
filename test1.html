@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tracker - Test1</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map { height: 100vh; }
+    </style>
+</head>
+<body>
+    <h1>Tracker: Test1</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Inițializare hartă
+        const map = L.map('map').setView([46.77, 23.59], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        const marker = L.marker([46.77, 23.59]).addTo(map);
+
+        // Funcție pentru tracking GPS
+        if (navigator.geolocation) {
+            navigator.geolocation.watchPosition(
+                (position) => {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+
+                    // Actualizează markerul pe hartă
+                    marker.setLatLng([lat, lng]);
+                    map.setView([lat, lng], 13);
+
+                    // Trimite coordonatele la server
+                    fetch("save_location.php", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                            device: "test1",
+                            latitude: lat,
+                            longitude: lng,
+                            accuracy: position.coords.accuracy
+                        })
+                    });
+                },
+                (error) => alert("Eroare GPS: " + error.message)
+            );
+        } else {
+            alert("Browser-ul nu suportă GPS!");
+        }
+    </script>
+</body>
+</html>
